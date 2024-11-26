@@ -1,0 +1,42 @@
+# custom property (???? Absolute Path)
+file:
+  directory: D:/mydownload/test1_greengram
+
+
+default-page-size : 20
+
+
+# mybatis setting
+mybatis:
+  mapper-locations: mappers/**/*.xml
+
+# Base URL setting
+#server:
+# servlet:
+#   context-path: /api
+
+spring:
+  application:
+    name: greengram_test1
+
+  # DB setting
+  Datasource:
+    url: jdbc:mariadb://localhost/test1_greengram # ?? url, localhost? ip
+    username: root
+    password: green502
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+
+
+springdoc:
+  swagger_ui:
+    default-model-expand-depth: 10
+    display-request-duration:  true
+    operations-sorter: method
+    path: /swagger
+
+  cache:
+    disabled: true

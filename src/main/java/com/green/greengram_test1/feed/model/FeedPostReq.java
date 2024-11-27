@@ -7,6 +7,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
+@Schema(title = "피드 등록")
 public class FeedPostReq {
     @JsonIgnore
     private long feedId;
